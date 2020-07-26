@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale =1">
         <title> Needle Finder App</title>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" >
         <script language="JavaScript" type="text/JavaScript">
         function findProduct()
             {
@@ -60,40 +60,42 @@
     </head>
 
     <body>
-    <table>
-    <form>
-            <td width="94">Gauge: </td>
-            <td width="165"><input type="number" name="gauge" /></td>
-        </tr>
-        <tr>
-            <td width="94">Length: </td>
-            <td width="165"><input type="number" name="length" /></td>
-        </tr>
-        <tr>
-            <td width="94">Volume:</td>
-            <td width="165"><input type="number" name="volume" /></td>
-        </tr>
-        <tr>
-            <td><input name="Input" type="button" value="Find Item"
-                onclick="findProduct(); setColor()"/></td>
-        </tr>
+        <div class="form">
+            <table>
+                <form>
+                    <tr>
+                        <td>Gauge: </td>
+                        <td width="165"><input type="number" name="gauge" /></td>
+                    </tr>
+                
+                
+                <!-- This is a future feature
+                <tr>
+                        <td width="94">Length: </td>
+                        <td width="165"><input type="number" name="length" /></td>
+                    </tr>
+                    <tr>
+                        <td width="94">Volume:</td>
+                        <td width="165"><input type="number" name="volume" /></td>
+                    </tr>
+                -->
+                    <tr>
+                        <td><input name="Input" type="button" value="Find Item"
+                            onclick="findProduct(); setColor()"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Your product is:</td>
+                        <td id="product"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Your product's color is: </td>
+                        <td id="productColor"><label id="productColorLabel">Color</label></td>
+                    </tr>
+                </form>
+            </table>
         
-        </table>
-        <br />
-
-        
-        <td> Your product is:</td>
-        <td><div id="product"></div></td>
-        
-        
-
-        <b> Your product's color is: </b>
-        <div id="productColor"><label id="productColorLabel">Color</label></div>
-    </form>
-        
+        </div>
     </body>
-
-    <script>
-
-    </script>
 </html>
