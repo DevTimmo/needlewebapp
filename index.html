@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1">
+        <title> Needle Finder App</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" >
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="form">
+            <table>
+                <form>
+                    <tr>
+                        <td>Gauge: </td>
+                        <td width="165"><input type="number" name="gauge" /></td>
+                    </tr>
+                
+                
+                <!-- This is a future feature
+                <tr>
+                        <td width="94">Length: </td>
+                        <td width="165"><input type="number" name="length" /></td>
+                    </tr>
+                    <tr>
+                        <td width="94">Volume:</td>
+                        <td width="165"><input type="number" name="volume" /></td>
+                    </tr>
+                -->
+                    <tr>
+                        <td><input name="Input" type="button" value="Find Item"
+                            onclick="getFetch(); createTable();"/></td>
+                    </tr>
+                    <tr>
+                        <td> Your product gauge is</td>
+                        <td> Your product's color is </td>
+                        <td> Your product's NDC is </td>
+                        <td> Your product's length is </td>
+                        
+                    </tr>
+                    <tr>
+                        <td id="gauge"></td>
+                        <td id="productColor"><label id="productColorLabel"></label></td>
+                        <td id="productNDC"><label id="productNDCLabel"></label></td>
+                        <td id="productLength"></td>
+                    </tr>
+                    <table>
+                        <tr>
+                        <th>product gauge</th>
+                        <th>product's color</th>
+                        <th>product's NDC </th>
+                        <th>product's length</th>
+
+                        </tr>
+                        <tbody id="resultTable"></tbody>
+                        
+                        
+                    </table>
+                </form>
+            </table>
+        
+        </div>
+    </body>
+</html>
