@@ -1,1 +1,140 @@
 CREATE TABLE needle
+
+
+
+
+
+(305106, 30, 1/2 in, #FFFF00')	
+(305128, 30, 1 in, #FFFF00')
+
+
+(305109, 27, '1/2 in', '#999b9e')
+(305136, 27, '1 1/4 in', '#999b9e')
+(301629, 27, '1 1/2 in', '#999b9e')		
+(305110, 26, '3/8 in', '#95533c')
+(305111, 26, '1/2 in', '#95533c')		
+(305122, 25, '5/8 in', '#f5822b')		
+(305124, 25, '7/8 in', '#f5822b')		
+(305125, 25, '1 in', '#f5822b')		
+(305127, 25, '1 1/2 in', '#f5822b')
+
+
+
+
+(305143, 23, '3/4 in', '#005188')
+(305145, 23, '1 in', '#005188')
+(305120, 23, '1 1/4 in', '#005188')
+(305155, 22, '1 in', '#000000')	
+(305156, 22, '1 1/2 in', '#000000')
+(305165, 21, '1 in', '#006910')
+(305167, 21, '1 1/2 in', '#006910')
+(305129, 21, '2 in', '#006910')
+(305175, 20, '1 in', '#fff200')
+(305176, 20, '1 1/2 in', '#fff200')
+(305186, 19, '1 in', '#f0e0c6')
+(305187, 19, '1 1/2 in', '#f0e0c6')
+(305195, 18, '1 in', '#f59eb3')
+(305196, 18, '1 1/2 in', '#f59eb3')
+(305115, 26, '5/8 in', '#95533c')
+(305193, 23, '1 in', '#005188')
+(305194, 23, '1 1/2 in', '#005188')
+(305185, 18, '1 1/2 in', '#f59eb3')
+(305177, 21, '1 in', '#006910')
+(305190, 21, '1 1/2 in', '#006910')
+
+
+PostgreSQL script
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305106, 30, '1/2 in', '#FFFF00');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305128, 30, '1 in', '#FFFF00');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305109, 27, '1/2 in', '#999b9e');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305136, 27, '1 1/4 in', '#999b9e');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (301629, 27, '1 1/2 in', '#999b9e')	;
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305110, 26, '3/8 in', '#95533c');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305111, 26, '1/2 in', '#95533c');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305122, 25, '5/8 in', '#f5822b');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305124, 25, '7/8 in', '#f5822b');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305125, 25, '1 in', '#f5822b');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305127, 25, '1 1/2 in', '#f5822b');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305143, 23, '3/4 in', '#005188');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305145, 23, '1 in', '#005188');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305120, 23, '1 1/4 in', '#005188');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305155, 22, '1 in', '#000000');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305156, 22, '1 1/2 in', '#000000');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305165, 21, '1 in', '#006910');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305167, 21, '1 1/2 in', '#006910');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305129, 21, '2 in', '#006910');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305175, 20, '1 in', '#fff200');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305176, 20, '1 1/2 in', '#fff200');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305186, 19, '1 in', '#f0e0c6');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305187, 19, '1 1/2 in', '#f0e0c6');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305195, 18, '1 in', '#f59eb3');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305196, 18, '1 1/2 in', '#f59eb3');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305115, 26, '5/8 in', '#95533c');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305193, 23, '1 in', '#005188');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305194, 23, '1 1/2 in', '#005188');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305185, 18, '1 1/2 in', '#f59eb3');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305177, 21, '1 in', '#006910');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color)
+	VALUES (305190, 21, '1 1/2 in', '#006910');
+	

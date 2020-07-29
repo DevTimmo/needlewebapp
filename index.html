@@ -30,23 +30,33 @@
                 -->
                     <tr>
                         <td><input name="Input" type="button" value="Find Item"
-                            onclick="findProduct(); setColor()"/></td>
+                            onclick="getFetch(); createTable();"/></td>
                     </tr>
-                    
                     <tr>
-                        <td> Your product gauge is:</td>
-                        <td id="product"></td>
+                        <td> Your product gauge is</td>
+                        <td> Your product's color is </td>
+                        <td> Your product's NDC is </td>
+                        <td> Your product's length is </td>
+                        
                     </tr>
-                    
                     <tr>
-                        <td> Your product's color is: </td>
+                        <td id="gauge"></td>
                         <td id="productColor"><label id="productColorLabel"></label></td>
-                    </tr>
-
-                    <tr>
-                        <td> Your product's NDC is: </td>
                         <td id="productNDC"><label id="productNDCLabel"></label></td>
+                        <td id="productLength"></td>
                     </tr>
+                    <table>
+                        <tr>
+                        <th>product gauge</th>
+                        <th>product's color</th>
+                        <th>product's NDC </th>
+                        <th>product's length</th>
+
+                        </tr>
+                        <tbody id="resultTable"></tbody>
+                        
+                        
+                    </table>
                 </form>
             </table>
         
