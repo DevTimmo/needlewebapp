@@ -14,7 +14,7 @@
                 <form>
                     <tr>
                         <td>Gauge: </td>
-                        <td width="165"><input type="number" name="gauge" /></td>
+                        <td width="165"><input name="gauge" type="number"/></td>
                     </tr>
                 
                 
@@ -30,15 +30,15 @@
                 -->
                     <tr>
                         <td><input name="Input" type="button" value="Find Item"
-                            onclick="getFetch(); createTable();"/></td>
+                            onclick="getUserGaugeInput();"/></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td> Your product gauge is</td>
                         <td> Your product's color is </td>
                         <td> Your product's NDC is </td>
                         <td> Your product's length is </td>
                         
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td id="gauge"></td>
                         <td id="productColor"><label id="productColorLabel"></label></td>
@@ -47,10 +47,10 @@
                     </tr>
                     <table>
                         <tr>
-                        <th>product gauge</th>
-                        <th>product's color</th>
-                        <th>product's NDC </th>
-                        <th>product's length</th>
+                        <th>product gauge &nbsp;</th>
+                        <th>product's color &nbsp;</th>
+                        <th>product's NDC &nbsp;</th>
+                        <th>product's length &nbsp;</th>
 
                         </tr>
                         <tbody id="resultTable"></tbody>
