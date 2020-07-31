@@ -1,48 +1,40 @@
+
+
+// Imports the express functionality into the variable express
 const express = require('express');
+// Imports the router functionality that is pulled from express into 
+// the variable router
 const router = require('express').Router()
+// This constructs a client and pool used to query with our database
 const { Client, Pool } = require('pg');
+// This constructs a response object which imports express
 const { response } = require('express');
+// This is the connection to our localhost postgreSQL database
+// admin = user
+// password = password
+// localhost:5432 = ip address and port
+// /needleApp = name of the table we are connecting into
 const connectionString = 'postgres://admin:password@localhost:5432/needleApp';
+// Creates a client object which connects to the database defined above
 const client = new Client({
     connectionString: connectionString
 });
 
+//connects to the client
 client.connect();
 var app = express();
+// Sets the port that we will be using to connect to the server
 app.set('port', process.env.PORT || 4000);
 
-// const queryDatabase = (req, res) =>{
-//     //res.sendFile('C:/Users/Tim/Documents/needleWebApp/index.html');
-//     res.header("Access-Control-Allow-Origin",  "*")
-//     client.query(`SELECT * FROM needle WHERE gauge=${res}`, (error, results) =>{
-//         if(error){
-//             throw error;
-//         }
-//         return res.status(200).json(results.rows);
-//     })
-// }
-
-
-// Puts the information below in the getResponse variable to be called later
-const getResponse = (req, res) => {
-    res.header("Access-Control-Allow-Origin",  "*")
-    return res.json({ status: 200, data: {name: "Hello" }});
-}
-
-// https://stackoverflow.com/questions/53235193/how-to-pass-user-input-from-html-form-when-using-express-router
-// Sending file through server
-app.get("/", (req, res) =>{
-    res.header("Access-Control-Allow-Origin",  "*")
-    res.sendFile(__dirname + "/index.html");
-});
-
-//app.use('/api', router);
-
-//app.route('/hello').get(getResponse);
+// using the url /databaseTest 
 
 app.get('/databaseTest', (req, res) => {
+    // Takes the url params of gauge and sets that equal to gaugeInput
     let gaugeInput = req.query.gauge;
+    // Disables coors
     res.header("Access-Control-Allow-Origin",  "*")
+
+    //The actual database query using the url param
     client.query(`SELECT * FROM needle WHERE gauge=${gaugeInput}`, (error, results) =>{
         if(error){
             throw error;
@@ -51,38 +43,9 @@ app.get('/databaseTest', (req, res) => {
     })
 });
 
-
-
+// Logs that the server is running
 app.listen(4000, function () {
     console.log('Server is running.. on Port 4000');
 });
-
-
-
-// app.get('/', async (req, res) => {
-//     res.sendFile('C:/Users/Tim/Documents/needleWebapp/index.html', {__dirname});
-//     //var userInputGauge = findProduct();
-//     //const result = await client.query(`SELECT ${userInputGauge} FROM needle`)
-//     //res.send(result);
-// })
-
-// app.get('/test1', async(req, res) =>{
-//     var userInputGauge = findProduct();
-//     client.query(`SELECT ${userInputGauge} FROM needle`, function(err, result){
-//     res.send(result);
-//     })
-
-// });
-
-//This can be done either this way or by using the variable getResponse above
-// router.get("/hello", (req, res) => {
-//     console.log("query1");
-    
-//     //Turning off coors beacuse fuck coors
-//     res.header("Access-Control-Allow-Origin",  "*")
-//     return res.json({ status: 200, data: {name: "Hello" }});
-  
-//     });
-
 
 
