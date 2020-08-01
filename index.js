@@ -28,6 +28,11 @@ function getUserGaugeInput(){
             // Sets table equal to the the index.html id resultTable
             var table = document.getElementById("resultTable");
 
+            // If the table has rows it will remove the nodes.
+            while(table.hasChildNodes()){
+                table.removeChild(table.lastChild);
+            }
+
             // Iterates over each element in the data and puts it in a new column
             // and will put each set of columns in a new row with each iteration
             data.forEach(thing =>{
@@ -36,7 +41,6 @@ function getUserGaugeInput(){
                 var row = table.insertRow(0); // Insert a row to the table
                 var cell1 = row.insertCell(-1); // Insert the first column
                 cell1.appendChild(document.createTextNode(thing.gauge));
-
 
                 var cell2 = row.insertCell(-1);
                 cell2.className = "colorClassName";
@@ -48,6 +52,9 @@ function getUserGaugeInput(){
                 
                 var cell4 = row.insertCell(-1);
                 cell4.appendChild(document.createTextNode(thing.length));
+
+                var cell5 = row.insertCell(-1);
+                cell5.appendChild(document.createTextNode(thing.volume + 'mL'));
             })
         })
 }

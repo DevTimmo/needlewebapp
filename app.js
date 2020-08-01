@@ -14,7 +14,7 @@ const { response } = require('express');
 // password = password
 // localhost:5432 = ip address and port
 // /needleApp = name of the table we are connecting into
-const connectionString = 'postgres://admin:password@localhost:5432/needleApp';
+const connectionString = 'postgres://admin:password@51.81.32.218:5432/needleApp';
 // Creates a client object which connects to the database defined above
 const client = new Client({
     connectionString: connectionString
@@ -35,7 +35,7 @@ app.get('/databaseTest', (req, res) => {
     res.header("Access-Control-Allow-Origin",  "*")
 
     //The actual database query using the url param
-    client.query(`SELECT * FROM needle WHERE gauge=${gaugeInput}`, (error, results) =>{
+    client.query(`SELECT * FROM syringe WHERE gauge=${gaugeInput}`, (error, results) =>{
         if(error){
             throw error;
         }
