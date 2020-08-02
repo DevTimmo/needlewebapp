@@ -1,7 +1,7 @@
 //const { response } = require("express");
 
 
-let url = new URL('http://localhost:4000/databaseTest');
+let url = new URL('http://51.81.32.218:4000/databaseTest');
 let formData = {
     gauge: 25
 };
@@ -21,7 +21,7 @@ function getUserGaugeInput(){
     const gauge = document.forms[0].gauge.value;
 
     // Pass the variable gauge into the url
-    fetch(`http://localhost:4000/databaseTest?gauge=${gauge}`)
+    fetch(`http://51.81.32.218:4000/databaseTest?gauge=${gauge}`)
         .then(res => res.json())
         .then(data => {
 
