@@ -14,7 +14,7 @@ const { response } = require('express');
 // password = password
 // localhost:5432 = ip address and port
 // /needleApp = name of the table we are connecting into
-const connectionString = 'postgres://needlewebappfinal:Password@51.81.32.218:5432/needlewebapp';
+const connectionString = 'postgres://needlewebapp:Password@51.81.32.218:5432/needleapp';
 // Creates a client object which connects to the database defined above
 const client = new Client({
 	connectionString: connectionString
@@ -25,7 +25,6 @@ try{
 client.connect();
 } catch (error){ console.log(error) };
 var app = express();
-app.use(cors());
 // Sets the port that we will be using to connect to the server
 app.set('port', process.env.PORT || 4000);
 
