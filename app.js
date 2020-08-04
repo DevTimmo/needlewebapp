@@ -14,7 +14,7 @@ const { response } = require('express');
 // password = password
 // localhost:5432 = ip address and port
 // /needleApp = name of the table we are connecting into
-const connectionString = 'postgres://admin:password@51.81.32.218:5432/needleApp';
+const connectionString = 'postgres://needlewebapp:Password@localhost:5432/needle';
 // Creates a client object which connects to the database defined above
 const client = new Client({
     connectionString: connectionString
@@ -23,12 +23,14 @@ const client = new Client({
 //connects to the client
 client.connect();
 var app = express();
+app.use(cors());
 // Sets the port that we will be using to connect to the server
 app.set('port', process.env.PORT || 4000);
 
 // using the url /databaseTest 
 
 app.get('/databaseTest', (req, res) => {
+    console.log("error1");
     // Takes the url params of gauge and sets that equal to gaugeInput
     let gaugeInput = req.query.gauge;
     // Disables coors
