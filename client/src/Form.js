@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react';
 import {GET} from './Fetch.js'
-import axios from 'axios';
 
 
 export default class Form extends Component{
