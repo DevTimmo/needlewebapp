@@ -12,24 +12,37 @@ export default class Table extends React.Component {
           const {referenceID, gauge, length, volume} = syringe;
           return (
               <tr key={referenceID}>
-                <td>{referenceID}</td>
-                <td>{gauge}</td>
-                <td>{length}</td>
-                <td>{volume}</td>
+                <td>08290-{referenceID}</td>
+                <td>{gauge}G</td>
+                <td>{length} inch</td>
+                <td>{volume} milliliters</td>
               </tr>
           )
         })
       }
     
-    renderTableHeader(){
-        let keys = Object.keys(this.props.data);
-        console.log(keys);
-        for(var index=0; index<keys; index++){
-            console.log(keys[index]);
-        }
+  renderTableHeader(){
+    this.props.data.map((syringe, index) => {
+        //const {referenceID, gauge, length, volume} = syringe;
+        //let header = Object.keys(syringe)
+        
+        Object.keys(syringe).map((key) => {
+            console.log(key)
+            return <th key={syringe.referenceID}>{key}</th>
+        })
+        
+    })
     
 
-    }
+    // return this.props.data.map((item) => {
+    //     return <th key={item.key()}> {item.key()}</th>
+    // })
+
+
+    // return header.map((key,index) => {
+    //   return <th key={index}>{key.toUpperCase()}</th>
+    // })
+  }
 
 
     render(){
