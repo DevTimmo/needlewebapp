@@ -13,23 +13,14 @@ export default class App extends Component{
       syringes: [],
       value: ''
     };
-
   }
 
   saveData = (data) => {
     this.setState({syringes: data});
   }
 
-  // renderTableHeader(){
-  //   let header = Object.keys(this.state.syringes)
-  //   return header.map((key,index) => {
-  //     return <th key={index}>{key.toUpperCase()}</th>
-  //   })
-  // }
-
   render() {
     return (
-
     <div className="App">
       <Form saveData={this.saveData}/>
       <Table data={this.state.syringes}/>

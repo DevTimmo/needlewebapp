@@ -1,5 +1,6 @@
 {
   "name": "needlewebapp",
+  "homepage": "http://51.81.32.218/tnoye.github.io/client/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

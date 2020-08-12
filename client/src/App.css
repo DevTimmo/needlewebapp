@@ -42,4 +42,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-collapse:separate; 
+  border-spacing:1em;
 }

@@ -1,3 +1,9 @@
+BD Integra Syringes
+BD Integra Needles
+	https://www.bd.com/en-us/offerings/capabilities/syringes-and-needles/safety-syringes-and-needles/safety-syringes/integra-retracting-syringe
+
+
+
 
 -- Table: public.syringe
 
@@ -19,153 +25,165 @@ ALTER TABLE public.syringe
     OWNER to timmo;
 
 
-(305106, 30, 1/2 in, #FFFF00')	
-(305128, 30, 1 in, #FFFF00')
-(305109, 27, '1/2 in', '#999b9e')
-(305136, 27, '1 1/4 in', '#999b9e')
-(301629, 27, '1 1/2 in', '#999b9e')		
-(305110, 26, '3/8 in', '#95533c')
-(305111, 26, '1/2 in', '#95533c')		
-(305122, 25, '5/8 in', '#f5822b')		
-(305124, 25, '7/8 in', '#f5822b')		
-(305125, 25, '1 in', '#f5822b')		
-(305127, 25, '1 1/2 in', '#f5822b')
-(305143, 23, '3/4 in', '#005188')
-(305145, 23, '1 in', '#005188')
-(305120, 23, '1 1/4 in', '#005188')
-(305155, 22, '1 in', '#000000')	
-(305156, 22, '1 1/2 in', '#000000')
-(305165, 21, '1 in', '#006910')
-(305167, 21, '1 1/2 in', '#006910')
-(305129, 21, '2 in', '#006910')
-(305175, 20, '1 in', '#fff200')
-(305176, 20, '1 1/2 in', '#fff200')
-(305186, 19, '1 in', '#f0e0c6')
-(305187, 19, '1 1/2 in', '#f0e0c6')
-(305195, 18, '1 in', '#f59eb3')
-(305196, 18, '1 1/2 in', '#f59eb3')
-(305115, 26, '5/8 in', '#95533c')
-(305193, 23, '1 in', '#005188')
-(305194, 23, '1 1/2 in', '#005188')
-(305185, 18, '1 1/2 in', '#f59eb3')
-(305177, 21, '1 in', '#006910')
-(305190, 21, '1 1/2 in', '#006910')
-
-
 PostgreSQL script
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305106, 30, '1/2 in', '#FFFF00');
+	VALUES (305106, 30, '1/2', '#FFFF00');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305128, 30, '1 in', '#FFFF00');
+	VALUES (305128, 30, '1', '#FFFF00');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305109, 27, '1/2 in', '#999b9e');
+	VALUES (305109, 27, '1/2', '#999b9e');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305136, 27, '1 1/4 in', '#999b9e');
+	VALUES (305136, 27, '1 1/4', '#999b9e');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (301629, 27, '1 1/2 in', '#999b9e')	;
+	VALUES (301629, 27, '1 1/2', '#999b9e')	;
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305110, 26, '3/8 in', '#95533c');
+	VALUES (305110, 26, '3/8', '#95533c');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305111, 26, '1/2 in', '#95533c');
+	VALUES (305111, 26, '1/2', '#95533c');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305122, 25, '5/8 in', '#f5822b');
+	VALUES (305122, 25, '5/8', '#f5822b');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305124, 25, '7/8 in', '#f5822b');
+	VALUES (305124, 25, '7/8', '#f5822b');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305125, 25, '1 in', '#f5822b');
+	VALUES (305125, 25, '1', '#f5822b');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305127, 25, '1 1/2 in', '#f5822b');
+	VALUES (305127, 25, '1 1/2', '#f5822b');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305143, 23, '3/4 in', '#005188');
+	VALUES (305143, 23, '3/4', '#005188');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305145, 23, '1 in', '#005188');
+	VALUES (305145, 23, '1', '#005188');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305120, 23, '1 1/4 in', '#005188');
+	VALUES (305120, 23, '1 1/4', '#005188');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305155, 22, '1 in', '#000000');
+	VALUES (305155, 22, '1', '#000000');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305156, 22, '1 1/2 in', '#000000');
+	VALUES (305156, 22, '1 1/2', '#000000');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305165, 21, '1 in', '#006910');
+	VALUES (305165, 21, '1', '#006910');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305167, 21, '1 1/2 in', '#006910');
+	VALUES (305167, 21, '1 1/2', '#006910');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305129, 21, '2 in', '#006910');
+	VALUES (305129, 21, '2', '#006910');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305175, 20, '1 in', '#fff200');
+	VALUES (305175, 20, '1', '#fff200');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305176, 20, '1 1/2 in', '#fff200');
+	VALUES (305176, 20, '1 1/2', '#fff200');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305186, 19, '1 in', '#f0e0c6');
+	VALUES (305186, 19, '1', '#f0e0c6');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305187, 19, '1 1/2 in', '#f0e0c6');
+	VALUES (305187, 19, '1 1/2', '#f0e0c6');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305195, 18, '1 in', '#f59eb3');
+	VALUES (305195, 18, '1', '#f59eb3');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305196, 18, '1 1/2 in', '#f59eb3');
+	VALUES (305196, 18, '1 1/2', '#f59eb3');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305115, 26, '5/8 in', '#95533c');
+	VALUES (305115, 26, '5/8', '#95533c');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305193, 23, '1 in', '#005188');
+	VALUES (305193, 23, '1', '#005188');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305194, 23, '1 1/2 in', '#005188');
+	VALUES (305194, 23, '1 1/2', '#005188');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305185, 18, '1 1/2 in', '#f59eb3');
+	VALUES (305185, 18, '1 1/2', '#f59eb3');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305177, 21, '1 in', '#006910');
+	VALUES (305177, 21, '1', '#006910');
 INSERT INTO public.needle(
 	"referenceID", gauge, length, color)
-	VALUES (305190, 21, '1 1/2 in', '#006910');
+	VALUES (305190, 21, '1 1/2', '#006910');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305310, 25, '5/8', '#f5822b', 'BD Integra retracting needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305311,	25, '1', '#f5822b', 'BD Integra retracting needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305312,	23, '1', '#005188', 'BD Integra retracting needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305313,	22, '1 1/2', '#000000', 'BD Integra retracting needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305275,	18, '1 1/2', '#f59eb3', 'BD Integra blunt fill needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305833,	18, '1 1/2', '#f59eb3', 'BD Integra blunt filter needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305921, 27, '5/8', '#999b9e', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305901, 25, '5/8', '#f5822b', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305916, 25, '1', '#f5822b', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305902, 23, '1', '#005188', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305900, 22, '1 1/2', '#000000', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305915, 21, '1', '#006910', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305917, 21, '1 1/2', '#006910', 'BD SafetyGlide needle');
+INSERT INTO public.needle(
+	"referenceID", gauge, length, color, style)
+	VALUES (305918, 18, '1 1/2', '#f59eb3', 'BD SafetyGlide needle');
+
 
 ----------------------------------------------------------
+
+
+INSERT INTO public.syringe
+	("referenceID", gauge, length, volume, color, style, isDetachable, )
+	VALUES (305269, 25, '5/8', 3, '#f5822b', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
-	VALUES (305269, 25, '5/8', 3, '#f5822b');
+	VALUES (305270, 25, '1', 3, '#f5822b', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
-	VALUES (305270, 25, '1', 3, '#f5822b');
+	VALUES (305271, 23, '1', 3, '#005188', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
-	VALUES (305271, 23, '1', 3, '#005188');
+	VALUES (305272, 22, '1 1/2', 3, '#000000', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
-	VALUES (305272, 22, '1 1/2', 3, '#000000');
+	VALUES (305273, 21, '1', 3, '#006910', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
-	VALUES (305273, 21, '1', 3, '#006910');
-INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305274, 21, '1 1/2', 3, '#006910');
+	VALUES (305274, 21, '1 1/2', 3, '#006910', 'BD Integra syringe + needle', 'Yes');
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
 	VALUES (305561, 21, '1 1/2', 5, '#006910');
@@ -259,3 +277,19 @@ INSERT INTO public.syringe
 INSERT INTO public.syringe
 	("referenceID", gauge, length, volume, color)
 	VALUES (309596, 22, '1', 3, '#000000');
+
+
+
+
+
+
+
+
+
+
+
+
+
+BD Integra 3-mL syringe
+Catalogue no.	Description	Quantity (per box)	Quantity (per case)	e-Catalogue
+305283	Syringe only
