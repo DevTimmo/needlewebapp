@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 export default class Table extends React.Component {
-
     renderTableData(){
         return this.props.data.map((syringe, index) => {
-          const {referenceID, gauge, length, volume} = syringe;
+          const {referenceID, gauge, length, volume, color} = syringe;
           return (
               <tr key={referenceID}>
                 <td>08290-{referenceID}</td>
                 <td>{gauge}G</td>
                 <td>{length} inch</td>
                 <td>{volume} milliliters</td>
+                <td style={{backgroundColor: color}}></td>
               </tr>
           )
         })
@@ -23,7 +22,6 @@ export default class Table extends React.Component {
         Object.keys(this.props.data[0]).map((key) => {
             header.push(<th key={this.props.data.referenceID}>{key}</th>)
         })
-        //console.log(header);
         return header;
     }
 
@@ -37,5 +35,4 @@ export default class Table extends React.Component {
             </table>
         )
     }
-
 }

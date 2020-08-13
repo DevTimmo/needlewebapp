@@ -1,6 +1,5 @@
 //https://vegibit.com/a-simple-react-js-form-example/
 import React, { Component } from 'react';
-import {GET} from './Fetch.js'
 
 export default class Form extends Component{
     constructor(){
@@ -30,7 +29,7 @@ export default class Form extends Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-            <h1>Needle Search Tool</h1>
+            <h1>Needle/Syringe Search Tool</h1>
             <label>Gauge:
               <input
                type="number"
