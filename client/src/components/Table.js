@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 export default class Table extends React.Component {
     renderTableData(){
         return this.props.data.map((syringe, index) => {
-          const {referenceID, gauge, length, volume, color} = syringe;
+          const {referenceID, NDC, gauge, length, volume, color, syringeStyle, needleStyle} = syringe;
+          console.log(syringe);
           return (
               <tr key={referenceID}>
-                <td>08290-{referenceID}</td>
+                <td>{referenceID}</td>  
+                <td>{NDC}</td>
                 <td>{gauge}G</td>
                 <td>{length} inch</td>
                 <td>{volume} milliliters</td>
                 <td style={{backgroundColor: color}}></td>
+                <td>{syringeStyle}</td>
+                <td>{needleStyle}</td>
               </tr>
           )
         })

@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import Form from './Form.js'
-import Table from './Table.js'
+import Form from './components/Form.js'
+import Table from './components/Table.js'
 
 export default class App extends Component{
   

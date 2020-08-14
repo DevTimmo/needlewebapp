@@ -167,118 +167,116 @@ INSERT INTO public.needle(
 
 
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color, style, isDetachable, )
-	VALUES (305269, 25, '5/8', 3, '#f5822b', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305269, '08290-3052-69', 25, '5/8', 3, '#f5822b', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305270, 25, '1', 3, '#f5822b', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305270, '08290-3052-70', 25, '1', 3, '#f5822b', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305271, 23, '1', 3, '#005188', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305271, '08290-3052-71', 23, '1', 3, '#005188', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305272, 22, '1 1/2', 3, '#000000', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305272, '08290-3052-72', 22, '1 1/2', 3, '#000000', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305273, 21, '1', 3, '#006910', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305273, '08290-3052-73', 21, '1', 3, '#006910', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305274, 21, '1 1/2', 3, '#006910', 'BD Integra syringe + needle', 'Yes');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305274, '08290-3052-74', 21, '1 1/2', 3, '#006910', 'BD Integra Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305561, 21, '1 1/2', 5, '#006910');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305561, '08290-3055-61', 21, '1 1/2', 5, '#006910', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color )
-	VALUES (305564, 21, '1 1/2', 10, '#006910' );
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305564, '08290-3055-64', 21, '1 1/2', 10, '#006910', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305775, 30, '1/2', 1, '#FFFF00');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305775, '08290-3057-75', 30, '1/2', 1, '#FFFF00', 'BD Slip Tip Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305776, 27, '1/2', 1, '#999b9e');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305776, '08290-3057-76', 27, '1/2', 1, '#999b9e', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305778, 30, '1/2', 1, '#FFFF00');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305778, '08290-3057-78', 30, '1/2', 1, '#FFFF00', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305777, 25, '5/8', 1, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305777, '08290-3057-77', 25, '5/8', 1, '#f5822b', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305779, 21, '1', 3, '#006910');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305779, '08290-3057-79', 21, '1', 3, '#006910', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305780, 25, '5/8', 1, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305780, '08290-3057-80', 25, '5/8', 1, '#f5822b', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305781, 25, '5/8', 3, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305781, '08290-3057-81', 25, '5/8', 3, '#f5822b', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305782, 23, '1', 3, '#005188');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305782, '08290-3057-82', 23, '1', 3, '#005188', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305783, 22, '1 1/2', 3, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305783, '08290-3057-83', 22, '1 1/2', 3, '#000000', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305784, 21, '1 1/2', 3, '#006910');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305784, '08290-3057-84', 21, '1 1/2', 3, '#006910', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305785, 22, '1 1/2', 5, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305785, '08290-3057-85', 22, '1 1/2', 5, '#000000', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305786, 22, '1 1/2', 10, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305786, '08290-3057-86', 22, '1 1/2', 10, '#000000', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305787, 25, '1', 3, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305787, '08290-3057-87', 25, '1', 3, '#f5822b', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305788, 22, '1', 3, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305788, '08290-3057-88', 22, '1', 3, '#000000', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305789, 27, '1/2', 1, '#999b9e');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305789, '08290-3057-89', 27, '1/2', 1, '#999b9e', 'BD Slip Tip Syringe', 'BD Eclipse Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305903, 25, '5/8', 1, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305903, '08290-3059-03', 25, '5/8', 1, '#f5822b', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305904, 25, '5/8', 3, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305904, '08290-3059-04', 25, '5/8', 3, '#f5822b', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305905, 23, '5/8', 3, '#005188');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305905, '08290-3059-05', 23, '5/8', 3, '#005188', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305906, 22, '1 1/2', 3, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305906, '08290-3059-06', 22, '1 1/2', 3, '#000000', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305907, 22, '1 1/2', 5, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305907, '08290-3059-07', 22, '1 1/2', 5, '#000000', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305908, 22, '1 1/2', 10, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305908, '08290-3059-08', 22, '1 1/2', 10, '#000000', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305909, 21, '1 1/2', 3, '#006910');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305909, '08290-3059-09', 21, '1 1/2', 3, '#006910', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305924, 25, '1', 3, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305924, '08290-3059-24', 25, '1', 3, '#f5822b', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (305927, 27, '5/8', 1, '#999b9e');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (305927, '08290-3059-27', 27, '5/8', 1, '#999b9e', 'BD Slip Tip Syringe', 'BD SafetyGlide Safety Needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (309592, 25, '5/8', 3, '#f5822b');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (309592, '08290-3095-92', 25, '5/8', 3, '#f5822b', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (309593, 22, '1 1/2', 3, '#000000');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (309593, '08290-3095-93', 22, '1 1/2', 3, '#000000', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (309594, 23, '1', 3, '#005188');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (309594, '08290-3095-94', 23, '1', 3, '#005188', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (309595, 21, '1/2', 3, '#006910');
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (309595, '08290-3095-95', 21, '1/2', 3, '#006910', 'BD Safety-Lok Syringe', 'Non-safety needle');
 INSERT INTO public.syringe
-	("referenceID", gauge, length, volume, color)
-	VALUES (309596, 22, '1', 3, '#000000');
-
-
+	("referenceID", "NDC", gauge, length, volume, color, "syringeStyle", "needleStyle")
+	VALUES (309596, '08290-3095-96', 22, '1', 3, '#000000', 'BD Safety-Lok Syringe', 'Non-safety needle');
 
 
 
