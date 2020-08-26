@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Table.css'
-//import Table from 'react-bootstrap/Table';
+import Table from 'react-bootstrap/Table';
 
 export default class ResultTable extends React.Component {
     renderTableData(){

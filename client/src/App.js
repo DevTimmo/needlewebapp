@@ -25,7 +25,9 @@ export default class App extends Component{
     return (
     <div className="App">
       <Form saveData={this.saveData}/>
-      <ResultTable data={this.state.syringes} responsive/>
+      <Table responsive>
+        <ResultTable data={this.state.syringes}/>
+      </Table>
     </div>
     );
 };
