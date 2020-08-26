@@ -1,22 +1,40 @@
-import React, { Component } from 'react';
-import '../App.css';
+import React from 'react';
+import '../styles/Table.css'
+//import Table from 'react-bootstrap/Table';
 
-export default class Table extends React.Component {
+export default class ResultTable extends React.Component {
     renderTableData(){
         return this.props.data.map((syringe, index) => {
-          const {referenceID, NDC, gauge, length, volume, color, syringeStyle, needleStyle} = syringe;
-          console.log(syringe);
+          const { NDC, gauge, length, volume, color, syringeStyle, needleStyle} = syringe; //referenceID
+          if(volume == null){
+            return (
+                <tbody>
+                    <tr>
+                        <td>{index + 1}</td>
+                        <td>{NDC}</td>
+                        <td>{gauge}G</td>
+                        <td>{length} inch</td>
+                        <td></td>
+                        <td style={{backgroundColor: color}}></td>
+                        <td></td>
+                        <td>{needleStyle}</td>
+                    </tr>
+                </tbody>
+            )
+          }
           return (
-              <tr key={referenceID}>
-                <td>{referenceID}</td>  
-                <td>{NDC}</td>
-                <td>{gauge}G</td>
-                <td>{length} inch</td>
-                <td>{volume} milliliters</td>
-                <td style={{backgroundColor: color}}></td>
-                <td>{syringeStyle}</td>
-                <td>{needleStyle}</td>
-              </tr>
+                <tbody>
+                    <tr>
+                        <td>{index + 1}</td>
+                        <td>{NDC}</td>
+                        <td>{gauge}G</td>
+                        <td>{length} inch</td>
+                        <td>{volume} milliliters</td>
+                        <td style={{backgroundColor: color}}></td>
+                        <td>{syringeStyle}</td>
+                        <td>{needleStyle}</td>
+                    </tr>
+                </tbody>
           )
         })
       }
@@ -26,8 +44,10 @@ export default class Table extends React.Component {
         Object.keys(this.props.data[0]).map((key) => {
             header.push(<th key={this.props.data.referenceID}>{key}</th>)
         })
-        return header;
+        return (header);
     }
+
+    
 
     render(){
         return(
@@ -35,6 +55,7 @@ export default class Table extends React.Component {
                 <tbody>
                     <tr>{this.props.data && this.props.data[0] && this.renderTableHeader()}</tr>
                     {this.renderTableData()}
+                    
                 </tbody>
             </table>
         )

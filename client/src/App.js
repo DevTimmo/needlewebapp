@@ -1,9 +1,10 @@
 //https://www.telerik.com/blogs/how-to-build-forms-with-react-the-easy-way
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Component } from 'react';
 import './App.css';
 import Form from './components/Form.js'
-import Table from './components/Table.js'
+import ResultTable from './components/Table.js'
 
 export default class App extends Component{
   
@@ -23,7 +24,7 @@ export default class App extends Component{
     return (
     <div className="App">
       <Form saveData={this.saveData}/>
-      <Table data={this.state.syringes}/>
+      <ResultTable data={this.state.syringes}/>
     </div>
     );
 };
