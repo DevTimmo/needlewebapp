@@ -51,7 +51,7 @@ export default class ResultTable extends React.Component {
 
     render(){
         return(
-            <div style={{overflowX: 'scroll'}}>
+            <div style={{overflowX: 'auto'}}>
             <table className='syringes' >
                 <tbody>
                     <tr>{this.props.data && this.props.data[0] && this.renderTableHeader()}</tr>
