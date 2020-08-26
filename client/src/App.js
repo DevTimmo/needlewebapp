@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Component } from 'react';
 import './App.css';
+import Table from 'react-bootstrap/Table'
 import Form from './components/Form.js'
 import ResultTable from './components/Table.js'
 
@@ -23,8 +24,11 @@ export default class App extends Component{
   render() {
     return (
     <div className="App">
+      
       <Form saveData={this.saveData}/>
-      <ResultTable data={this.state.syringes}/>
+      <Table responsive>
+        <ResultTable data={this.state.syringes}/>
+      </Table>
     </div>
     );
 };

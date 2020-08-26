@@ -11,6 +11,7 @@ th, tr{
   border-collapse: collapse;
   font-size: 20px;
   font-style: helvectica;
+  overflow-x:auto
 }
 
 .sansserif {
