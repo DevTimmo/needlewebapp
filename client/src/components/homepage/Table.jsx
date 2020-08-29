@@ -8,7 +8,7 @@ export default class ResultTable extends React.Component {
             if (volume == null) {
                 return (
                     <tbody>
-                        <tr>
+                        <tr key={index}>
                             <td>{index + 1}</td>
                             <td>{NDC}</td>
                             <td>{gauge}G</td>
@@ -23,7 +23,7 @@ export default class ResultTable extends React.Component {
             }
             return (
                 <tbody>
-                    <tr>
+                    <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{NDC}</td>
                         <td>{gauge}G</td>

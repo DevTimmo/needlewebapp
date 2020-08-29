@@ -9,29 +9,12 @@ import SubmitProductFormContainer from './components/SubmitProductFormContainer'
 
 export default class App extends Component {
 
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     syringes: [],
-  //     value: ''
-  //   };
-  // }
-
-  // saveData = (data) => {
-  //   this.setState({ syringes: data });
-  // }
-
   render() {
     return (
       <div className="App">
-
-        {/* <Form saveData={this.saveData} />
-        <ResultTable data={this.state.syringes} />
-        <NavToDBPost /> */}
         <Router>
-          <HomePage />
           <Switch>
-            <Route exact path="/" />
+            <Route exact path="/" component={HomePage} />
             <Route path="/submitproduct" component={SubmitProductFormContainer} />
           </Switch>
         </Router>
