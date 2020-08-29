@@ -4,7 +4,7 @@ import '../../App.css';
 function Header() {
 
     return (
-        <h1>Needle/Syringe Search Tool</h1>
-    )
+        <h1><a href="/">Needle/Syringe Search Tool</a></h1>
+    );
 }
 export default Header;

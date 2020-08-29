@@ -21,14 +21,12 @@ export default class HomePage extends React.Component {
 
     render() {
         return (
-
             <>
                 <Header />
                 <Form saveData={this.saveData} />
                 <ResultTable data={this.state.syringes} />
                 <NavToDBPost />
             </>
-
         );
     }
 }

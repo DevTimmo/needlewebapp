@@ -1,4 +1,3 @@
-//https://vegibit.com/a-simple-react-js-form-example/
 import React, { Component } from 'react';
 
 

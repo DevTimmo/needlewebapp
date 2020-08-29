@@ -7,7 +7,7 @@ export default class ResultTable extends React.Component {
             const { NDC, gauge, length, volume, color, syringeStyle, needleStyle } = syringe; //referenceID
             if (volume == null) {
                 return (
-                    <tbody>
+                    <>
                         <tr key={index}>
                             <td>{index + 1}</td>
                             <td>{NDC}</td>
@@ -18,11 +18,11 @@ export default class ResultTable extends React.Component {
                             <td></td>
                             <td>{needleStyle}</td>
                         </tr>
-                    </tbody>
+                    </>
                 )
             }
             return (
-                <tbody>
+                <>
                     <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{NDC}</td>
@@ -33,7 +33,7 @@ export default class ResultTable extends React.Component {
                         <td>{syringeStyle}</td>
                         <td>{needleStyle}</td>
                     </tr>
-                </tbody>
+                </>
             )
         })
     }
@@ -45,8 +45,6 @@ export default class ResultTable extends React.Component {
         })
         return (header);
     }
-
-
 
     render() {
         return (
