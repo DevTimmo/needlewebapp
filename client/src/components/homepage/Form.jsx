@@ -30,7 +30,6 @@ export default class Form extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h1>Needle/Syringe Search Tool</h1>
         <label>Gauge:
               <input
             type="number"

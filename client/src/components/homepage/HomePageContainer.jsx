@@ -1,7 +1,9 @@
 import React from 'react';
-import Form from './Form'
-import ResultTable from './Table'
-import NavToDBPost from './NavToDBPost'
+
+import Header from './Header';
+import Form from './Form';
+import ResultTable from './Table';
+import NavToDBPost from './NavToDBPost';
 
 export default class HomePage extends React.Component {
 
@@ -21,6 +23,7 @@ export default class HomePage extends React.Component {
         return (
 
             <>
+                <Header />
                 <Form saveData={this.saveData} />
                 <ResultTable data={this.state.syringes} />
                 <NavToDBPost />
