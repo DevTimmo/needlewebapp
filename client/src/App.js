@@ -4,31 +4,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Form from './components/Form'
-import ResultTable from './components/Table'
-import NavToDBPost from './components/NavToDBPost'
+import HomePage from './components/homepage/HomePageContainer'
+import SubmitProductFormContainer from './components/SubmitProductFormContainer'
 
 export default class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      syringes: [],
-      value: ''
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     syringes: [],
+  //     value: ''
+  //   };
+  // }
 
-  saveData = (data) => {
-    this.setState({ syringes: data });
-  }
+  // saveData = (data) => {
+  //   this.setState({ syringes: data });
+  // }
 
   render() {
     return (
       <div className="App">
+
+        {/* <Form saveData={this.saveData} />
+        <ResultTable data={this.state.syringes} />
+        <NavToDBPost /> */}
         <Router>
-          <Form saveData={this.saveData} />
-          <ResultTable data={this.state.syringes} />
-          <NavToDBPost />
+          <HomePage />
+          <Switch>
+            <Route exact path="/" />
+            <Route path="/submitproduct" component={SubmitProductFormContainer} />
+          </Switch>
         </Router>
       </div>
     );

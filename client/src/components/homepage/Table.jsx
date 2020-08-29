@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Table.css'
+import '../../styles/Table.css'
 
 export default class ResultTable extends React.Component {
     renderTableData() {
@@ -40,7 +40,7 @@ export default class ResultTable extends React.Component {
 
     renderTableHeader() {
         const header = [];
-        Object.keys(this.props.data[0]).map((key) => {
+        Object.keys(this.props.data[0]).forEach((key) => {
             header.push(<th key={this.props.data.referenceID}>{key}</th>)
         })
         return (header);
