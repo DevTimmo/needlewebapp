@@ -6,6 +6,10 @@ th{
 th, tr{
     border-bottom: 1px solid #ddd;
 }
+td {
+  background-color: lightgray;
+  
+}
 
 .syringes{
   border-collapse: collapse;

@@ -2,14 +2,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Table from 'react-bootstrap/Table'
-import Form from './components/Form.js'
-import ResultTable from './components/Table.js'
+import Form from './components/Form'
+import ResultTable from './components/Table'
+import NavToDBPost from './components/NavToDBPost'
 
-export default class App extends Component{
-  
-  constructor(){
+export default class App extends Component {
+
+  constructor() {
     super();
     this.state = {
       syringes: [],
@@ -18,18 +19,19 @@ export default class App extends Component{
   }
 
   saveData = (data) => {
-    this.setState({syringes: data});
+    this.setState({ syringes: data });
   }
 
   render() {
     return (
-    <div className="App">
-      <Form saveData={this.saveData}/>
-      <Table responsive>
-        <ResultTable data={this.state.syringes}/>
-      </Table>
-    </div>
+      <div className="App">
+        <Router>
+          <Form saveData={this.saveData} />
+          <ResultTable data={this.state.syringes} />
+          <NavToDBPost />
+        </Router>
+      </div>
     );
-};
+  };
 }
 //https://medium.com/the-andela-way/handling-user-input-in-react-crud-1396e51a70bf
