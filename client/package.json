@@ -1,5 +1,6 @@
 {
   "name": "needlewebapp",
+  "homepage": "http://needletool.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
