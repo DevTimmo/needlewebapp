@@ -48,14 +48,16 @@ export default class ResultTable extends React.Component {
 
     render() {
         return (
-            <div style={{ overflowX: 'auto' }}>
-                <table className='syringes' >
-                    <tbody>
-                        <tr>{this.props.data && this.props.data[0] && this.renderTableHeader()}</tr>
-                        {this.renderTableData()}
+            <div class="flex-container">
+                <div style={{ overflowX: 'auto' }}>
+                    <table className='syringes' >
+                        <tbody>
+                            <tr>{this.props.data && this.props.data[0] && this.renderTableHeader()}</tr>
+                            {this.renderTableData()}
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }
