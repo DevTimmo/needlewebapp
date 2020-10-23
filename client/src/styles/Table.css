@@ -34,7 +34,7 @@ tr:hover {
 
 @media only screen and (max-width: 600px){
   .syringes{
-    width: 150%; 
+    width: 200%; 
     overflow: scroll;
   }
 }
