@@ -26,8 +26,15 @@ tr:hover {
   color: white;
 }
 
-.flex-container{
+/* .flex-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
+} */
+
+@media only screen and (max-width: 600px){
+  .syringes{
+    width: 150%; 
+    overflow: scroll;
+  }
 }
