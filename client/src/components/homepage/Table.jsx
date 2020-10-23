@@ -4,7 +4,7 @@ import '../../styles/Table.css'
 export default class ResultTable extends React.Component {
     renderTableData() {
         return this.props.data.map((syringe, index) => {
-            const { NDC, gauge, length, volume, color, syringeStyle, needleStyle } = syringe; //referenceID
+            const { NDC, gauge, length, volume, color, SyringeStyle, NeedleStyle } = syringe; //referenceID
             if (volume == null) {
                 return (
                     <>
@@ -16,7 +16,7 @@ export default class ResultTable extends React.Component {
                             <td></td>
                             <td style={{ backgroundColor: color }}></td>
                             <td></td>
-                            <td>{needleStyle}</td>
+                            <td>{NeedleStyle}</td>
                         </tr>
                     </>
                 )
@@ -30,8 +30,8 @@ export default class ResultTable extends React.Component {
                         <td>{length} inch</td>
                         <td>{volume} milliliters</td>
                         <td style={{ backgroundColor: color }}></td>
-                        <td>{syringeStyle}</td>
-                        <td>{needleStyle}</td>
+                        <td>{SyringeStyle}</td>
+                        <td>{NeedleStyle}</td>
                     </tr>
                 </>
             )

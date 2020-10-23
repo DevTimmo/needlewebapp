@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+
 
 function NavToDBPost() {
 
     return (
-        <p> Click <a href="/submitproduct">here</a> to submit a new product</p>
+        <p> If you have a product you dont see here please add an issue <a href="https://github.com/tnoye/needlewebapp/issues">here</a> </p>
     );
 }
-export default withRouter(NavToDBPost);
+export default NavToDBPost;
