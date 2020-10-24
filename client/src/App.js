@@ -9,7 +9,7 @@ import HomePage from './components/homepage/HomePageContainer'
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize('250308213');
+    ReactGA.initialize('G-YXWKW8WJ3L');
     ReactGA.pageview(window.location.pathname);
   })
 
