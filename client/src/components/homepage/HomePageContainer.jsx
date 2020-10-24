@@ -13,7 +13,11 @@ export default class HomePage extends React.Component {
             syringes: [],
             value: ''
         };
+        ReactGA.initialize('G-YXWKW8WJ3L');
+        ReactGA.pageview(window.location.pathname);
     }
+
+
 
     saveData = (data) => {
         this.setState({ syringes: data });
