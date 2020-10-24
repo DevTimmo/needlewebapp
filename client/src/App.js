@@ -4,13 +4,12 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import './App.css';
 import HomePage from './components/homepage/HomePageContainer'
-
+ReactGA.initialize('UA-28141175-2');
 
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize('G-Z9Y2PKWCXW');
-    ReactGA.pageview('/homepage');
+    ReactGA.pageview(window.location.pathname);
   })
 
   return (
