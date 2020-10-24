@@ -4,6 +4,7 @@ import Header from './Header';
 import Form from './Form';
 import ResultTable from './Table';
 import NavToDBPost from './NavToDBPost';
+import ReactGA from 'react-ga'
 
 export default class HomePage extends React.Component {
 
