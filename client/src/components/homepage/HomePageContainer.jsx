@@ -15,7 +15,7 @@ export default class HomePage extends React.Component {
             value: ''
         };
         ReactGA.initialize('G-Z9Y2PKWCXW');
-        ReactGA.pageview('/');
+        ReactGA.pageview('');
     }
 
 
