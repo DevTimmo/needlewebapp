@@ -4,7 +4,6 @@ import Header from './Header';
 import Form from './Form';
 import ResultTable from './Table';
 import NavToDBPost from './NavToDBPost';
-import ReactGA from 'react-ga'
 
 export default class HomePage extends React.Component {
 
@@ -14,11 +13,8 @@ export default class HomePage extends React.Component {
             syringes: [],
             value: ''
         };
-        ReactGA.initialize('G-Z9Y2PKWCXW');
-        ReactGA.pageview('');
+
     }
-
-
 
     saveData = (data) => {
         this.setState({ syringes: data });

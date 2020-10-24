@@ -9,8 +9,8 @@ import HomePage from './components/homepage/HomePageContainer'
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize('G-YXWKW8WJ3L');
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.initialize('G-Z9Y2PKWCXW');
+    ReactGA.pageview('/homepage');
   })
 
   return (
