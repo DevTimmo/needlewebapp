@@ -14,8 +14,8 @@ export default class HomePage extends React.Component {
             syringes: [],
             value: ''
         };
-        ReactGA.initialize('G-Z9Y2PKWCXW');
-        ReactGA.pageview(window.location.pathname);
+        ReactGA.init('G-Z9Y2PKWCXW');
+        ReactGA.pageview('/');
     }
 
 
